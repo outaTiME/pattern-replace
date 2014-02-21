@@ -1,0 +1,45 @@
+{
+  "name": "pattern-replace",
+  "description": "Replace text patterns with a given replacement.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/outaTiME/pattern-replace",
+  "author": {
+    "name": "outaTiME",
+    "email": "afalduto@gmail.com",
+    "url": "http://outa.im/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/outaTiME/pattern-replace"
+  },
+  "bugs": {
+    "url": "https://github.com/outaTiME/pattern-replace/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/outaTiME/pattern-replace/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2"
+  },
+  "keywords": [],
+  "bin": {
+    "replace": "bin/replace"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "js-yaml": "~3.0.1"
+  }
+}
