@@ -204,7 +204,7 @@ This is the old way to define patterns using plain object (simple variable looku
 Type: `String`
 Default: `@@`
 
-The prefix added to `patterns.match` for easy matching and replace error prevention.
+The prefix added for matching (prevent bad replacements / easy way).
 
 > This only applies for simple variable lookup mechanism.
 
@@ -212,7 +212,7 @@ The prefix added to `patterns.match` for easy matching and replace error prevent
 Type: `Boolean`
 Default: `true`
 
-If set to `false`, we match the string in `patterns.match` without `prefix` concatenation. It was useful when you want to look up an simple string.
+If set to `false`, we match the pattern without `prefix` concatenation (useful when you want to lookup an simple string).
 
 > This only applies for simple variable lookup mechanism.
 
