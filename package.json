@@ -1,7 +1,7 @@
 {
   "name": "pattern-replace",
   "description": "Replace text patterns with a given replacement.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/outaTiME/pattern-replace",
   "author": {
     "name": "outaTiME",
