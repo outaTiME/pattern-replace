@@ -498,6 +498,7 @@ _(Coming soon)_
 
 ## Release History
 
+ * 2014-02-26   v0.1.1   Remove the force flag (only applies in grunt plugin).
  * 2014-02-25   v0.1.0   Initial version.
 
 ---
