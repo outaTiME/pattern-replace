@@ -21,12 +21,15 @@
       "url": "https://github.com/outaTiME/pattern-replace/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/replacer.js",
   "engines": {
     "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "js-yaml": "~3.0.1"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.8.0",
@@ -35,7 +38,6 @@
     "grunt": "~0.4.2"
   },
   "keywords": [
-    "gruntplugin",
     "replace",
     "replacement",
     "pattern",
@@ -49,11 +51,9 @@
     "yaml",
     "flatten"
   ],
-  "bin": {
-    "replace": "bin/replace"
-  },
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "js-yaml": "~3.0.1"
-  }
+  "main": "lib/replacer.js",
+  "files": [
+    "lib",
+    "LICENSE-MIT"
+  ]
 }
