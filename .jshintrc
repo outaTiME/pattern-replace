@@ -2,12 +2,11 @@
   "curly": true,
   "eqeqeq": true,
   "immed": true,
-  "latedef": "nofunc",
+  "latedef": true,
   "newcap": true,
   "noarg": true,
   "sub": true,
   "undef": true,
-  "unused": true,
   "boss": true,
   "eqnull": true,
   "node": true
