@@ -29,8 +29,7 @@ npm link .
 
 ## API Reference
 
-Assuming installation via NPM, you can use `pattern-replace` in your application
-like this:
+Assuming installation via NPM, you can use `pattern-replace` in your application like this:
 
 ```javascript
 var fs = require('fs');
@@ -55,8 +54,6 @@ console.log(result); // bar
 Type: `Array`
 
 Define patterns that will be used to replace the contents of source files.
-
-The matches will be sorted to prevent replacement issues like `head` / `header` (typo regexps will be resolved at last).
 
 #### patterns.match
 Type: `String|RegExp`
@@ -230,6 +227,12 @@ Default: `.`
 
 The delimiter used to flatten when using object as replacement.
 
+#### preserveOrder
+Type: `Boolean`
+Default: `false`
+
+If set to `true`, we preserve the patterns definition order, otherwise these will be sorted (in ascending order) to prevent replacement issues like `head` / `header` (typo regexps will be resolved at last).
+
 ### Built-in Replacements
 
 Few matching rules are provided by default and can be used anytime (these will be affected by the `options` given):
@@ -257,8 +260,6 @@ Few matching rules are provided by default and can be used anytime (these will b
  *  `__TARGET_FILENAME__`:
 
     Replace match with the filename of target file.
-
-> If you are looking how to use an `built-in` replacements, check out the [How to insert filename in target](#how-to-insert-filename-in-target) usage.
 
 ### Usage Examples
 
@@ -498,6 +499,7 @@ _(Coming soon)_
 
 ## Release History
 
+ * 2014-03-12   v0.1.2   New pattern matching for YAML object. New preserveOrder flag.
  * 2014-02-26   v0.1.1   Remove the force flag (only applies in grunt plugin).
  * 2014-02-25   v0.1.0   Initial version.
 
